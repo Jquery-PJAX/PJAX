@@ -17,6 +17,7 @@ function swapContent(href, url_data, target, loads) {
             pjax_e++;
             if (pjas_e<10){
                 target.innerHTML = "error"+pjax_e;
+                setTimeout( swapContent(href, url_data, target, loads), 500 );
             } else{
                 target.innerHTML = "we are currently experiencing a server error, please retry";
             }
