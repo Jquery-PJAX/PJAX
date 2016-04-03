@@ -1,3 +1,4 @@
+var pjax_e=0;
 function swapContent(href, url_data, target, loads) {
     $.ajax({
         type: 'GET',
@@ -13,7 +14,12 @@ function swapContent(href, url_data, target, loads) {
         });
           .fail(function() {
             //error processing
-            alert( "error" );
+            pjax_e++;
+            if (pjas_e<10){
+                target.innerHTML = "error"+pjax_e;
+            } else{
+                target.innerHTML = "we are currently experiencing a server error, please retry";
+            }
           })
             .always(function() {
               //url goes in here
