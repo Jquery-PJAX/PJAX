@@ -1,5 +1,3 @@
-.preventDefault();
-
 function swapContent(href, url_data, target, loads,DontPushState) {
     var pjax_e = 0;
     return recurse()
