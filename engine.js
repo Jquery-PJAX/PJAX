@@ -7,8 +7,6 @@ function swapContent(href, url_data, target, loads,DontPushState) {
                 type: 'GET',
                 cache: false,
                 url: href+'?'+url_data
-                
-                
             })
             .done(function(data) {
                 var $data = $(data)
@@ -24,7 +22,7 @@ function swapContent(href, url_data, target, loads,DontPushState) {
                     setTimeout(recurse, 500);
                 }
                 else {
-                    window.location = '?'+url_data;
+                    $(target).html("we are currently experiencing a server error, <a href='javascript:location.reload()'>refresh!</a>");
                 }
             });
     }
