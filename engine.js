@@ -6,8 +6,7 @@ function swapContent(href, url_data, target, loads,DontPushState) {
         return $.ajax({
                 type: 'GET',
                 cache: false,
-                url: href,
-                data: url_data
+                url: href+url_data
             })
             .done(function(data) {
                 var $data = $(data)
