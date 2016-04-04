@@ -11,7 +11,7 @@ function swapContent(href, url_data, target, loads,DontPushState) {
             .done(function(data) {
                 var $data = $(data)
                 var newContent=$data.filter(target)
-                $(target).replaceWith(newContent);
+                $('#'+target).replaceWith(newContent);
                 document.title=$data.filter("title").text();
                 loads.call(target, href, url_data, data);
                 if (!DontPushState)history.pushState(url_data, "", '?'+url_data);
