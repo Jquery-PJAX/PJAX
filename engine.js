@@ -15,7 +15,7 @@ function swapContent(href, url_data, target, loads,DontPushState) {
                 $(target).replaceWith(newContent);
                 document.title=$data.filter("title").text();
                 loads.call(target, href, url_data, data);
-                if (!DontPushState)history.pushState(url_data, "", href);
+                if (!DontPushState)history.pushState(url_data, "", href+url_data);
             }).fail(function() {
                 pjax_e++;
                 if(pjax_e < 10) {
