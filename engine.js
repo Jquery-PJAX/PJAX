@@ -22,7 +22,7 @@ function swapContent(href, url_data, target, loads,DontPushState) {
                     setTimeout(recurse, 500);
                 }
                 else {
-                    $(target).html("we are currently experiencing a server error, <a href='javascript:location.reload()'>refresh!</a>");
+                    window.location = '?'+url_data;
                 }
             });
     }
