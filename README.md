@@ -23,7 +23,8 @@ thisID<br>
 ###loads
 the things that run after the variables are the HTML is updated<br>
 example: (
-```thisFunction();
+```thisFunction(); 
+```
 )<br>
 
 ##INSTALATION
