@@ -17,7 +17,8 @@ example: (variable1=1&variable2=2)<br>
 what id is the return going to<br>
 example: (<br>
 thisID<br>
-``` <div id='thisID'></div>```
+```<div id='thisID'></div>
+```
 )
 
 ###loads
