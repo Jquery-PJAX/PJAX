@@ -5,13 +5,24 @@ Supports every language with the language specific folders once converted from t
 
 ##WHAT IS BEING PASSED INTO THE FUNCTION?
 
-href - the base URL for requesting the feed to come from
+###href
+the base URL for requesting the feed to come from<br>
+example: (this.php, that.php)<br>
 
-url_data - variables the server needs to run to use the target, and display the page also
+###url_data
+variables the server needs to run to use the target, and display the page also <br>
+example: (variable1=1&variable2=2)<br>
 
-target - what id is the return going to
+###target
+what id is the return going to<br>
+example: (<br>
+thisID<br>
+<div id='thisID'></div><br>
+)
 
-loads - the things that run after the variables are the HTML is updated
+###loads
+the things that run after the variables are the HTML is updated<br>
+example: (thisFunction();)<br>
 
 ##INSTALATION
 ###DEPENDENCIES:
