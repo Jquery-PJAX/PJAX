@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>speech test</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="http://rawgit.com/Jquery-PJAX/PJAX/master/engine.js"></script>
+<body>
+<a href='?variable1=1&variable2=2' onclick='return false;' onmousedown='swapContent("base.php", "variable1=1&variable2=2", test1, "dialog();")'>test with console.log+1 function</a>
+<a href='?variable1=1&variable2=2' onclick='return false;' onmousedown='swapContent("base.html", "variable1=1&variable2=2", test2, "")'>errors test</a>
+<a href='?variable1=1&variable2=2' onclick='return false;' onmousedown='swapContent("base.php", "variable1=1&variable2=2", test3, "")'>basic test</a>
+<table>
+    <tr>
+        <td>test 1</td>
+        <td>test 2</td>
+        <td>test 3</td>
+    </tr>
+    <tr>
+        <td id="test1"></td>
+        <td id="test2"></td>
+        <td id="test3"></td>
+    </tr>
+</table>
+</body>
+</html>
